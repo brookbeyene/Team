@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/motor")
+@RequestMapping("/")
 public class InventoryController {
     private final InventoryRepository inventoryRepository;
 
