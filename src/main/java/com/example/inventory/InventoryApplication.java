@@ -21,7 +21,7 @@ public class InventoryApplication {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/*")
                         .allowedMethods("")
-                        .allowedOrigins("https://finalprojectdakota.web.app/")
+                        .allowedOrigins("https://team-project-bcd.web.app/")
                                 .allowedHeaders("*")
                                 .allowCredentials(false)
                                 .maxAge(-1);
