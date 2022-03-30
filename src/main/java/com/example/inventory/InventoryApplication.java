@@ -14,19 +14,19 @@ public class InventoryApplication {
         SpringApplication.run(InventoryApplication.class, args);
     }
 
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurerAdapter() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/*")
-                        .allowedMethods("")
-                        .allowedOrigins("https://team-project-bcd.web.app/")
-                                .allowedHeaders("*")
-                                .allowCredentials(false)
-                                .maxAge(-1);
-            }
-        };
-    }
+//    @Bean
+//    public WebMvcConfigurer corsConfigurer() {
+//        return new WebMvcConfigurerAdapter() {
+//            @Override
+//            public void addCorsMappings(CorsRegistry registry) {
+//                registry.addMapping("/**")
+//                        .allowedMethods("*")
+//                        .allowedOrigins("https://team-project-bcd.web.app/")
+//                                .allowedHeaders("*")
+//                                .allowCredentials(false)
+//                                .maxAge(-1);
+//            }
+//        };
+//    }
 
 }
