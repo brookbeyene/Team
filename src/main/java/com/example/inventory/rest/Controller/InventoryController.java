@@ -23,12 +23,27 @@ public class InventoryController {
     @GetMapping("/{id}")
     Motorcycle getMotorcycle(@PathVariable Long id) {
         return inventoryRepository.findById(id)
-                .orElseThrow(() -> new ItemNotFoundException(id));
+                .orElseThrow(() -> new ItemNotFoundException());
     }
 
     @GetMapping("/")
     List<Motorcycle> getAllMotorcycles() {
         return inventoryRepository.findAll();
+    }
+
+    @GetMapping("/vin/{VIN}")
+    Motorcycle getMotorcyclesByVIN(@PathVariable int VIN) {
+        return inventoryRepository.findByVIN(VIN);
+    }
+
+    @GetMapping("/type/{type}")
+    List<Motorcycle> getMotorcyclesByType(@PathVariable String type) {
+        return inventoryRepository.findByType(type);
+    }
+
+    @GetMapping("/make/{make}")
+    List<Motorcycle> getMotorcyclesByMake(@PathVariable String make) {
+        return inventoryRepository.findByMake(make);
     }
 
     @PostMapping("/")
