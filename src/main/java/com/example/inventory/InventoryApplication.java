@@ -13,20 +13,5 @@ public class InventoryApplication {
     public static void main(String[] args) {
         SpringApplication.run(InventoryApplication.class, args);
     }
-
-//    @Bean
-//    public WebMvcConfigurer corsConfigurer() {
-//        return new WebMvcConfigurerAdapter() {
-//            @Override
-//            public void addCorsMappings(CorsRegistry registry) {
-//                registry.addMapping("/**")
-//                        .allowedMethods("*")
-//                        .allowedOrigins("https://team-project-bcd.web.app/")
-//                                .allowedHeaders("*")
-//                                .allowCredentials(false)
-//                                .maxAge(-1);
-//            }
-//        };
-//    }
-
+    
 }
