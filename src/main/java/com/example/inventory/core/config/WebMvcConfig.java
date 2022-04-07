@@ -16,4 +16,4 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .maxAge(-1);
     }
 }
-//                .allowedOrigins("https://team-project-bcd.web.app/")
+
